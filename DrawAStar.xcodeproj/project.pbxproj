@@ -12,6 +12,7 @@
 		501FD8BD2A0BFC75007457F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501FD8BC2A0BFC75007457F6 /* Assets.xcassets */; };
 		501FD8C02A0BFC75007457F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501FD8BF2A0BFC75007457F6 /* Preview Assets.xcassets */; };
 		501FD8C72A0BFCFF007457F6 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FD8C62A0BFCFF007457F6 /* DiamondView.swift */; };
+		501FD8C92A0C022C007457F6 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FD8C82A0C022C007457F6 /* StarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		501FD8BC2A0BFC75007457F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		501FD8BF2A0BFC75007457F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		501FD8C62A0BFCFF007457F6 /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
+		501FD8C82A0C022C007457F6 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				501FD8B82A0BFC73007457F6 /* DrawAStarApp.swift */,
 				501FD8BA2A0BFC73007457F6 /* ContentView.swift */,
 				501FD8C62A0BFCFF007457F6 /* DiamondView.swift */,
+				501FD8C82A0C022C007457F6 /* StarView.swift */,
 				501FD8BC2A0BFC75007457F6 /* Assets.xcassets */,
 				501FD8BE2A0BFC75007457F6 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				501FD8BB2A0BFC73007457F6 /* ContentView.swift in Sources */,
 				501FD8C72A0BFCFF007457F6 /* DiamondView.swift in Sources */,
+				501FD8C92A0C022C007457F6 /* StarView.swift in Sources */,
 				501FD8B92A0BFC73007457F6 /* DrawAStarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

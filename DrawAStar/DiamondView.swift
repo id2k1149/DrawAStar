@@ -28,20 +28,20 @@ struct DiamondView: View {
             let rightPointX = middle + hOffset
             
             ZStack {
-                Path { path in
-                    path.move(to: CGPoint(x: leftPointX, y: centerY))
-                    path.addLine(to: CGPoint(x: middle, y: 0))
-                    path.addLine(to: CGPoint(x: rightPointX, y: centerY))
-                    path.addLine(to: CGPoint(x: middle, y: middle))
-                    path.closeSubpath()
-                }
-                .fill(
-                    LinearGradient(
-                        colors: [.orange, .red],
-                        startPoint: .top,
-                        endPoint: .center
-                    )
-                )
+//                Path { path in
+//                    path.move(to: CGPoint(x: leftPointX, y: centerY))
+//                    path.addLine(to: CGPoint(x: middle, y: 0))
+//                    path.addLine(to: CGPoint(x: rightPointX, y: centerY))
+//                    path.addLine(to: CGPoint(x: middle, y: middle))
+//                    path.closeSubpath()
+//                }
+//                .fill(
+//                    LinearGradient(
+//                        colors: [.orange, .red],
+//                        startPoint: .top,
+//                        endPoint: .center
+//                    )
+//                )
                 
                 Path { path in
                     path.move(to: CGPoint(x: leftPointX, y: centerY))
