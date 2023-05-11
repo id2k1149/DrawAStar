@@ -16,7 +16,7 @@ struct ComplexStarView: View {
             Text("COMPLEX")
                 .padding(.top, 40)
             Spacer()
-            StarView(rays: 8)
+            StarView(rays: 8, isSimple: false)
                 .frame(width: 300, height: 300)
             Spacer()
         }

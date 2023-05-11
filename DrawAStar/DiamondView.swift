@@ -37,6 +37,7 @@ struct DiamondView: View {
         
         let size = min(width, height)
         let middle = size / 2
+        
         let angle = 180 / rays
         let radius = size * 0.2
         
@@ -59,14 +60,17 @@ struct DiamondView: View {
         
         let size = min(width, height)
         let middle = size / 2
-        let angle = 180 / rays
-        let radius = size * 0.2
         
-        let hOffset = radius * sin(Double(angle) * Double.pi / 180)
-        let vOffset = radius * cos(Double(angle) * Double.pi / 180)
+        let angleOne = 360 / rays
+        let tgOne = tan(Double(angleOne) * Double.pi / 180)
         
+        let angleTwo = (180 - angleOne) / 2
+        let tgTwo = tan(Double(angleTwo) * Double.pi / 180)
+        
+        let hOffset = middle / (tgOne + tgTwo)
+
         let leftPointX = middle - hOffset
-        let centerY = middle - vOffset
+        let centerY = hOffset * tgOne
         let rightPointX = middle + hOffset
         
         return [
@@ -81,7 +85,7 @@ struct DiamondView: View {
 
 struct DiamondView_Previews: PreviewProvider {
     static var previews: some View {
-        DiamondView(rays: 5, isSimple: false)
+        DiamondView(rays: 8, isSimple: true)
             .frame(width: 300, height: 300)
     }
 }

@@ -25,7 +25,7 @@ struct ButtonView: View {
                         .scaleEffect(isPulsating ? 1.05 : 1.0)
                         .animation(.default, value: isPulsating)
 
-                    StarView(rays: rays)
+                    StarView(rays: rays, isSimple: false)
                         .frame(width: 40, height: 40)
                         .foregroundColor(.orange)
                 }
