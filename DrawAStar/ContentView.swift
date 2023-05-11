@@ -10,12 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            ButtonView(title: "Tap Me",
-                       rays: 7,
+            ButtonView(rays: 5,
                        action: {})
             Spacer()
-            StarView(rays: 7)
-                .foregroundColor(.green)
+            StarView(rays: 5)
                 .frame(width: 300, height: 300)
             Spacer()
         }

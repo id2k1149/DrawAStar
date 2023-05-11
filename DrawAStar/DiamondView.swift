@@ -35,13 +35,13 @@ struct DiamondView: View {
                     path.addLine(to: CGPoint(x: middle, y: middle))
                     path.closeSubpath()
                 }
-//                .fill(
-//                    LinearGradient(
-//                        colors: [.orange, .red],
-//                        startPoint: .top,
-//                        endPoint: .center
-//                    )
-//                )
+                .fill(
+                    LinearGradient(
+                        colors: [.orange, .red],
+                        startPoint: .top,
+                        endPoint: .center
+                    )
+                )
                 
 //                Path { path in
 //                    path.move(to: CGPoint(x: leftPointX, y: centerY))
@@ -56,7 +56,7 @@ struct DiamondView: View {
 
 struct DiamondView_Previews: PreviewProvider {
     static var previews: some View {
-        DiamondView(rays: 8)
+        DiamondView(rays: 5)
             .frame(width: 300, height: 300)
     }
 }

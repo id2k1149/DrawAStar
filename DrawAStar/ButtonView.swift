@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ButtonView: View {
-    let title: String
     let rays: Int
     let action: () -> Void
     
@@ -19,7 +18,7 @@ struct ButtonView: View {
             Button(action: action) {
                 
                 HStack {
-                    Text(title)
+                    Text("How to draw a ")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -53,8 +52,7 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(title: "How to draw a ",
-                   rays: 5,
+        ButtonView(rays: 5,
                    action: {}
         )
     }
