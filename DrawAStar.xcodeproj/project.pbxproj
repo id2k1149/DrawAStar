@@ -14,8 +14,7 @@
 		501FD8C72A0BFCFF007457F6 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FD8C62A0BFCFF007457F6 /* DiamondView.swift */; };
 		501FD8C92A0C022C007457F6 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FD8C82A0C022C007457F6 /* StarView.swift */; };
 		501FD8CB2A0C194B007457F6 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FD8CA2A0C194B007457F6 /* ButtonView.swift */; };
-		503F3A122A0C725800E1333F /* ComplexStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F3A112A0C725800E1333F /* ComplexStarView.swift */; };
-		503F3A142A0C727800E1333F /* SimpleStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F3A132A0C727800E1333F /* SimpleStarView.swift */; };
+		503F3A122A0C725800E1333F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F3A112A0C725800E1333F /* StartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +26,7 @@
 		501FD8C62A0BFCFF007457F6 /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
 		501FD8C82A0C022C007457F6 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		501FD8CA2A0C194B007457F6 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		503F3A112A0C725800E1333F /* ComplexStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexStarView.swift; sourceTree = "<group>"; };
-		503F3A132A0C727800E1333F /* SimpleStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStarView.swift; sourceTree = "<group>"; };
+		503F3A112A0C725800E1333F /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +61,7 @@
 			children = (
 				501FD8B82A0BFC73007457F6 /* DrawAStarApp.swift */,
 				501FD8BA2A0BFC73007457F6 /* ContentView.swift */,
-				503F3A112A0C725800E1333F /* ComplexStarView.swift */,
-				503F3A132A0C727800E1333F /* SimpleStarView.swift */,
+				503F3A112A0C725800E1333F /* StartView.swift */,
 				501FD8C62A0BFCFF007457F6 /* DiamondView.swift */,
 				501FD8C82A0C022C007457F6 /* StarView.swift */,
 				501FD8CA2A0C194B007457F6 /* ButtonView.swift */,
@@ -153,11 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				501FD8BB2A0BFC73007457F6 /* ContentView.swift in Sources */,
-				503F3A142A0C727800E1333F /* SimpleStarView.swift in Sources */,
 				501FD8C72A0BFCFF007457F6 /* DiamondView.swift in Sources */,
 				501FD8CB2A0C194B007457F6 /* ButtonView.swift in Sources */,
 				501FD8C92A0C022C007457F6 /* StarView.swift in Sources */,
-				503F3A122A0C725800E1333F /* ComplexStarView.swift in Sources */,
+				503F3A122A0C725800E1333F /* StartView.swift in Sources */,
 				501FD8B92A0BFC73007457F6 /* DrawAStarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

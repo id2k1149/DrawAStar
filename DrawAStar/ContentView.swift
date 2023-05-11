@@ -11,12 +11,12 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            ComplexStarView()
+            StartView(isSimple: false)
                 .tabItem {
                     Image(systemName: "burst")
                     Text("Complex")
                 }
-            SimpleStarView()
+            StartView(isSimple: true)
                 .tabItem {
                     Image(systemName: "square")
                         .rotationEffect(.degrees(Double(40)))

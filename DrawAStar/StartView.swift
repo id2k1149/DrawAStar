@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-struct ComplexStarView: View {
+struct StartView: View {
+    let isSimple: Bool
 
     var body: some View {
         VStack {
             ButtonView(rays: 8,
                        action: {})
-            Text("COMPLEX")
+            Text(isSimple ? "SIMPLE" : "COMPLEX")
                 .padding(.top, 40)
             Spacer()
-            StarView(rays: 8, isSimple: false)
+            StarView(rays: 8, isSimple: isSimple)
                 .frame(width: 300, height: 300)
             Spacer()
         }
@@ -25,8 +26,8 @@ struct ComplexStarView: View {
      
 }
 
-struct ComplexStarView_Previews: PreviewProvider {
+struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        ComplexStarView()
+        StartView(isSimple: false)
     }
 }
