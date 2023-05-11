@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            ButtonView(rays: 5,
-                       action: {})
-            Spacer()
-            StarView(rays: 5)
-                .frame(width: 300, height: 300)
-            Spacer()
+        TabView {
+            StarOptionOneView()
+                .tabItem {
+                    Image(systemName: "burst")
+                    Text("Option One")
+                }
+            StarOptionTwoView()
+                .tabItem {
+                    Image(systemName: "star")
+                    Text("Option Two")
+                }
         }
-        .padding()
     }
 }
 
