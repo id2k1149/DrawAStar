@@ -15,17 +15,18 @@ struct StarView: View {
         let angle = 360 / Double(rays)
         ZStack {
             ForEach(0..<rays, id: \.self) { iteration in
-                DiamondView(rays: rays, isSimple: isSimple)
+                DiamondView(rays: rays,
+                            isSimple: isSimple)
                     .rotationEffect(.degrees(Double(iteration) * angle))
             }
-            Text("\(angle)")
         }
     }
 }
 
 struct StarView_Previews: PreviewProvider {
     static var previews: some View {
-        StarView(rays: 8, isSimple: true)
+        StarView(rays: 8,
+                 isSimple: true)
             .frame(width: 300, height: 300)
     }
 }

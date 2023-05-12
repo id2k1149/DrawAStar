@@ -11,6 +11,8 @@ struct DiamondView: View {
     let rays: Int
     let isSimple: Bool
     
+//    @Binding private var progress: Double
+    
     var body: some View {
         GeometryReader { geometry in
             let width = geometry.size.width
@@ -21,16 +23,45 @@ struct DiamondView: View {
             : getComplexCoordinates(width: width, height: height)
             
             ZStack {
+                Circle()
+                    .stroke(Color.gray.opacity(0.9), lineWidth: 1)
+                
+                if !isSimple {
+                    Circle()
+                        .stroke(Color.gray.opacity(0.9), lineWidth: 1)
+                        .frame(width: width * 0.4, height: height * 0.4)
+                } else {
+                    let radius = getRadius(point1: coordinates[0],
+                                           point2: coordinates[3])
+                    Circle()
+                        .stroke(Color.gray.opacity(0.9), lineWidth: 1)
+                        .frame(width: radius * 2, height: radius * 2)
+                }
+                
                 Path { path in
                     path.move(to: coordinates[0])
                     path.addLine(to: coordinates[1])
                     path.addLine(to: coordinates[2])
-                    path.addLine(to: coordinates[3])
-                    path.closeSubpath()
+//                    path.addLine(to: coordinates[3])
+//                    path.closeSubpath()
                 }
-                .stroke()
+//                .trim(from: 0.0, to: CGFloat(min(self.progress, 1.0)))
+                .stroke(Color.red, lineWidth: 2)
+//                .animation(.linear(duration: 2), value: progress)
             }
         }
+    }
+    
+    private func getRadius(point1: CGPoint, point2: CGPoint) -> CGFloat {
+        let pointX = point1.x
+        let pointY = point1.y
+        let centerX = point2.x
+        let centerY = point2.y
+        
+        let deltaX = pointX - centerX
+        let deltaY = pointY - centerY
+        let radius = sqrt(deltaX * deltaX + deltaY * deltaY)
+        return radius
     }
     
     private func getComplexCoordinates(width: CGFloat, height: CGFloat) -> [CGPoint] {
@@ -85,7 +116,8 @@ struct DiamondView: View {
 
 struct DiamondView_Previews: PreviewProvider {
     static var previews: some View {
-        DiamondView(rays: 8, isSimple: true)
+        DiamondView(rays: 8,
+                    isSimple: true)
             .frame(width: 300, height: 300)
     }
 }
