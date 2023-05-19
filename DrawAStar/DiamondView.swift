@@ -23,20 +23,20 @@ struct DiamondView: View {
             : getComplexCoordinates(width: width, height: height)
             
             ZStack {
-                Circle()
-                    .stroke(Color.gray.opacity(0.9), lineWidth: 1)
-                
-                if !isSimple {
-                    Circle()
-                        .stroke(Color.gray.opacity(0.9), lineWidth: 1)
-                        .frame(width: width * 0.4, height: height * 0.4)
-                } else {
-                    let radius = getRadius(point1: coordinates[0],
-                                           point2: coordinates[3])
-                    Circle()
-                        .stroke(Color.gray.opacity(0.9), lineWidth: 1)
-                        .frame(width: radius * 2, height: radius * 2)
-                }
+//                Circle()
+//                    .stroke(Color.gray.opacity(0.9), lineWidth: 1)
+//                
+//                if !isSimple {
+//                    Circle()
+//                        .stroke(Color.gray.opacity(0.9), lineWidth: 1)
+//                        .frame(width: width * 0.4, height: height * 0.4)
+//                } else {
+//                    let radius = getRadius(point1: coordinates[0],
+//                                           point2: coordinates[3])
+//                    Circle()
+//                        .stroke(Color.gray.opacity(0.9), lineWidth: 1)
+//                        .frame(width: radius * 2, height: radius * 2)
+//                }
                 
                 Path { path in
                     path.move(to: coordinates[0])
@@ -117,7 +117,7 @@ struct DiamondView: View {
 struct DiamondView_Previews: PreviewProvider {
     static var previews: some View {
         DiamondView(rays: 8,
-                    isSimple: true)
+                    isSimple: false)
             .frame(width: 300, height: 300)
     }
 }
